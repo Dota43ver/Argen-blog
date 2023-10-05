@@ -1,0 +1,24 @@
+.cotainer {
+
+}
+
+.editor {
+    display: flex;
+    gap: 20px;
+    height: 700px;
+}
+
+.button, .addButton {
+    width: 36px;
+    height: 36px;
+    background-repeat: 50%;
+    background-color: transparent;
+    border: 1px solid var(--textColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textArea {
+    width: 100%;
+}
