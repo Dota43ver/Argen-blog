@@ -11,7 +11,7 @@ const WritePage = () => {
     const [value, setValue] = useState("")
   return (
     <div className={styles.container}>
-        <input type="text" placeholder="Titulo" />
+        <input type="text" placeholder="Titulo" className={styles.input} />
         <div className={styles.editor}>
             <button className={styles.button}  onClick={() => setOpen(!open)}>
                 <Image src="/plus.png" alt="" width={16} height={16} />
@@ -31,6 +31,9 @@ const WritePage = () => {
             )}
             <ReactQuill className={styles.textArea} theme="bubble" value={value} onChange={setValue} placeholder="Cuenta tu historia..." />
         </div>
+        <button className={styles.publish}>
+            Publicar
+        </button>
     </div>
   )
 }
