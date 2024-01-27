@@ -12,6 +12,7 @@
 .button, .addButton {
     width: 36px;
     height: 36px;
+    border-radius: 50%;
     background-repeat: 50%;
     background-color: transparent;
     border: 1px solid var(--textColor);
