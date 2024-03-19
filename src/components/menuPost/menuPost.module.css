@@ -39,7 +39,7 @@
     width: max-content;
 }
 
-.category.travel {
+.category.viajes {
     background-color: #ff7857;
 }
 
@@ -47,7 +47,7 @@
     background-color: #ffb14f;
 }
 
-.food {
+.comida {
     background-color: #7fb881;
 }
 

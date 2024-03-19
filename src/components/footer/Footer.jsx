@@ -37,7 +37,7 @@ const Footer = () => {
           <Link href="/">Anime</Link>
           <Link href="/">Deportes</Link>
           <Link href="/">Coding</Link>
-          <Link href="/">Travel</Link>
+          <Link href="/">viajes</Link>
         </div>
         <div className={styles.list}>
           <span className={styles.listTitle}>Social</span>

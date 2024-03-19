@@ -13,12 +13,10 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 import { app } from "@/utils/firebase";
-import dynamic from "next/dynamic";
+import ReactQuill from "react-quill";
 
 const WritePage = () => {
-
   const { status } = useSession();
-  const ReactQuill = dynamic(() => import('react-quill'),{ssr: false});
   const router = useRouter();
 
   const [open, setOpen] = useState(false);
@@ -87,7 +85,7 @@ const WritePage = () => {
         desc: value,
         img: media,
         slug: slugify(title),
-        catSlug: catSlug || "general", //If not selected, choose the general category
+        catSlug: catSlug || "style", //If not selected, choose the general category
       }),
     });
 
@@ -108,9 +106,9 @@ const WritePage = () => {
       <select className={styles.select} onChange={(e) => setCatSlug(e.target.value)}>
         <option value="anime">anime</option>
         <option value="deportes">deportes</option>
-        <option value="food">food</option>
+        <option value="comida">comida</option>
         <option value="general">general</option>
-        <option value="travel">travel</option>
+        <option value="viajes">viajes</option>
         <option value="coding">coding</option>
       </select>
       <div className={styles.editor}>
