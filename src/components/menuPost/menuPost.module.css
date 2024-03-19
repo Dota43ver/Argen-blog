@@ -1,4 +1,4 @@
-.items{
+.items {
     margin-top: 35px;
     margin-bottom: 60px;
     display: flex;
@@ -6,10 +6,10 @@
     gap: 35px;
 }
 
-.item{
+.item {
     display: flex;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .imageContainer {
@@ -18,7 +18,7 @@
     position: relative;
 }
 
-.image{
+.image {
     border-radius: 50%;
     border: 3px solid lightgray;
     object-fit: cover;
@@ -43,7 +43,7 @@
     background-color: #ff7857;
 }
 
-.culture {
+.general {
     background-color: #ffb14f;
 }
 
@@ -51,7 +51,7 @@
     background-color: #7fb881;
 }
 
-.fashion {
+.deportes {
     background-color: #ff7887;
 }
 
@@ -59,7 +59,7 @@
     background-color: #775aec;
 }
 
-.style {
+.anime {
     background-color: #789cff;
 }
 

@@ -34,8 +34,8 @@ const Footer = () => {
         </div>
         <div className={styles.list}>
           <span className={styles.listTitle}>Tags</span>
-          <Link href="/">Style</Link>
-          <Link href="/">Fashion</Link>
+          <Link href="/">Anime</Link>
+          <Link href="/">Deportes</Link>
           <Link href="/">Coding</Link>
           <Link href="/">Travel</Link>
         </div>

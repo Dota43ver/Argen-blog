@@ -24,7 +24,7 @@ const MenuPost = ({withImage}) => {
           <Image src="/p1.jpeg" alt='something' fill className={styles.image} />
         </div>)}
         <div className={styles.textContainer}>
-          <span className={`${styles.category} ${styles.culture}`}>Culture</span>
+          <span className={`${styles.category} ${styles.general}`}>General</span>
           <h3 className={styles.postTitle}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
@@ -50,7 +50,7 @@ const MenuPost = ({withImage}) => {
           <Image src="/p1.jpeg" alt='something' fill className={styles.image} />
         </div>)}
         <div className={styles.textContainer}>
-          <span className={`${styles.category} ${styles.fashion}`}>Fashion</span>
+          <span className={`${styles.category} ${styles.deportes}`}>Deportes</span>
           <h3 className={styles.postTitle}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
