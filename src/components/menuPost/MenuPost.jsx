@@ -27,7 +27,7 @@ const MenuPost = async ({withImage}) => {
         {withImage && (<div className={styles.imageContainer}>
           <Image src={item.img} alt='something' fill className={styles.image} />
         </div>)}
-        <div className={styles.textContainer}>
+        <div className={styles.textContainer} key={item.id}>
           <span className={`${styles.category} ${styles[item.catSlug]}`}>{item.catSlug}</span>
           <h3 className={styles.postTitle}>{item.title}</h3>
           <div className={styles.detail}>
