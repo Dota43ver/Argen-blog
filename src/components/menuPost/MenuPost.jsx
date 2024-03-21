@@ -23,11 +23,11 @@ const MenuPost = async ({withImage}) => {
       {
         data?.map((item)=>(
 
-          <Link href={`/posts/${item.slug}`} className={styles.item}>
+          <Link href={`/posts/${item.slug}`} className={styles.item} key={item.id}>
         {withImage && (<div className={styles.imageContainer}>
           <Image src={item.img} alt='something' fill className={styles.image} />
         </div>)}
-        <div className={styles.textContainer} key={item.id}>
+        <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles[item.catSlug]}`}>{item.catSlug}</span>
           <h3 className={styles.postTitle}>{item.title}</h3>
           <div className={styles.detail}>
