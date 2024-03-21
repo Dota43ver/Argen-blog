@@ -7,19 +7,19 @@ import {
 } from "@/utils/auth";
 
 export const GET = async (req) => {
-    // Se asume que los parámetros de búsqueda ya no son necesarios para esta consulta específica.
+
 
     const query = {
-        take: 1, // Limitamos los resultados a sólo 1, el más reciente.
+        take: 1,
         orderBy: {
-            createdAt: 'desc', // Ordenamos por fecha de creación de manera descendente.
+            createdAt: 'desc',
         },
     }
 
     try {
         const posts = await prisma.post.findMany(query);
 
-        // Como sólo solicitamos el último post, no es necesario contar todos los posts.
+
         return new NextResponse(JSON.stringify({
             posts
         }, {
