@@ -14,9 +14,6 @@ const Menu = () => {
       <h2 className={styles.subtitle}>Descubri por topíco</h2>
       <h1 className={styles.title}>Categorias</h1>
       <MenuCategories />
-      <h2 className={styles.subtitle}>Elegido por el editor</h2>
-      <h1 className={styles.title}>seleccion del editor</h1>
-      <MenuPost withImage={true}/>
     </div>
   )
 }
