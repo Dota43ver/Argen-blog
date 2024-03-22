@@ -40,7 +40,7 @@ const Comments = ({ postSlug }) => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Comments</h1>
+      <h1 className={styles.title}>Comentarios</h1>
       {status === "authenticated" ? (
         <div className={styles.write}>
           <textarea
@@ -53,7 +53,7 @@ const Comments = ({ postSlug }) => {
           </button>
         </div>
       ) : (
-        <Link href="/login">Login to write a comment</Link>
+        <Link href="/login">Loguea para hacer un comentario</Link>
       )}
       <div className={styles.comments}>
         {isLoading

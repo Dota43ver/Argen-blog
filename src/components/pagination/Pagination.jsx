@@ -7,8 +7,8 @@ const Pagination = ({page, hasPrev, hasNext}) => {
   const router = useRouter()
   return (
     <div className={styles.container}>
-      <button className={styles.button} disabled={!hasPrev} onClick={()=> router.push(`?page=${page - 1}`)}>anterior</button>
-      <button className={styles.button} disabled={!hasNext} onClick={()=> router.push(`?page=${page + 1}`)}>siguiente</button>
+      <button className={styles.button} disabled={!hasPrev} onClick={()=> router.push(`?page=${page - 1}`)}>Anterior</button>
+      <button className={styles.button} disabled={!hasNext} onClick={()=> router.push(`?page=${page + 1}`)}>Siguiente</button>
     </div>
   )
 }

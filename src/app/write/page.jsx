@@ -102,7 +102,7 @@ const WritePage = () => {
     <div className={styles.container}>
       <input
         type="text"
-        placeholder="Title"
+        placeholder="Titulo"
         className={styles.input}
         onChange={(e) => setTitle(e.target.value)}
       />
@@ -144,11 +144,11 @@ const WritePage = () => {
           theme="bubble"
           value={value}
           onChange={setValue}
-          placeholder="Tell your story..."
+          placeholder="Conta lo que quieras..."
         />
       </div>
       <button className={styles.publish} onClick={handleSubmit}>
-        Publish
+        Publicar
       </button>
     </div>
   );
